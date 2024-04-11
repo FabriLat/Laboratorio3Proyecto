@@ -1,4 +1,5 @@
-import BookItem from "./components/bookItem/BookItem";
+import Books from "./components/books/Books";
+
 const App = () => {
   const books = [
     {
@@ -34,32 +35,12 @@ const App = () => {
         "https://prodimage.images-bn.com/pimages/9781728260839_p0_v2_s1200x630.jpg",
     },
   ];
+
   return (
     <div>
-      <BookItem
-        title={books[0].bookTitle}
-        author={books[0].bookAuthor}
-        raiting={books[0].bookRating}
-        pages={books[0].pageCount}
-      />
-      <BookItem
-        title={books[1].bookTitle}
-        author={books[1].bookAuthor}
-        raiting={books[1].bookRating}
-        pages={books[1].pageCount}
-      />
-      <BookItem
-        title={books[2].bookTitle}
-        author={books[2].bookAuthor}
-        raiting={books[2].bookRating}
-        pages={books[2].pageCount}
-      />
-      <BookItem
-        title={books[3].bookTitle}
-        author={books[3].bookAuthor}
-        raiting={books[3].bookRating}
-        pages={books[3].pageCount}
-      />
+      <h2>¡Bienvenidos a Books Champion!</h2>
+      <p>¡Quiero leer libros!</p>
+      <Books books={books} />
     </div>
   );
 };
