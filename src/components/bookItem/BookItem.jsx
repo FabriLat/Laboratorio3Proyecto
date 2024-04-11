@@ -6,7 +6,7 @@ const BookItem = ({ title, author, rating, pages, imageUrl }) => {
     <Card className="mx-3" style={{ width: "22rem" }}>
       <Card.Img
         height={400}
-        variant="top"
+        variant="button"
         alt="Portada de libro"
         src={
           imageUrl !== ""
